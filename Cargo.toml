@@ -1,0 +1,22 @@
+[package]
+name = "egui_reqwest_loader"
+version = "0.1.0"
+authors = ["PingPongun <pp.pp4@vp.pl>"]
+description = "Http(reqwest) image loader for the egui GUI library"
+edition = "2021"
+rust-version = "1.70"
+license = "MIT OR Apache-2.0"
+readme = "README.md"
+repository = "https://github.com/PingPongun/egui_reqwest_loader.git"
+keywords = ["egui"]
+
+[lib]
+
+[dependencies]
+egui = { version = "0.23", default-features = false }
+log = { version = "0.4", features = ["std"] }
+
+image = { version = "0.24", default-features = false }
+
+reqwest = { version = "0.11", default-features = false }
+tokio = { version = "1.34", features = ["rt"] }
